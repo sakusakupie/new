@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G00gle</title>
+    <title>検索サイト</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,13 +38,32 @@
         button:hover {
             background-color: #357ae8;
         }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            display: block;
+            margin: 5px 0;
+            color: #4285F4;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>G00gle</h1>
+        <h1>検索サイト</h1>
         <input type="text" id="searchQuery" placeholder="検索...">
         <button onclick="search()">検索</button>
+        <div class="links">
+            <h3>おすすめリンク</h3>
+            <a href="https://www.example.com" target="_blank">Exampleサイト</a>
+            <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+            <a href="https://www.youtube.com" target="_blank">YouTube</a>
+        </div>
     </div>
 
     <script>
@@ -59,4 +78,3 @@
     </script>
 </body>
 </html>
-
